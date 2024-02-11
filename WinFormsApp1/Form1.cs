@@ -22,5 +22,11 @@ namespace WinFormsApp1
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Juri j = new Juri();
+            j.Show();
+        }
     }
 }
