@@ -30,24 +30,26 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Juri));
-            imageList1 = new ImageList(components);
+            button1 = new Button();
             SuspendLayout();
-            // 
-            // imageList1
-            // 
-            imageList1.ColorDepth = ColorDepth.Depth32Bit;
-            imageList1.ImageStream = (ImageListStreamer)resources.GetObject("imageList1.ImageStream");
-            imageList1.TransparentColor = Color.Transparent;
-            imageList1.Images.SetKeyName(0, "d1.png");
-            imageList1.Images.SetKeyName(1, "d2.png");
-            imageList1.Images.SetKeyName(2, "d3.png");
-            imageList1.Images.SetKeyName(3, "d4.png");
+            button1.BackColor = Color.MediumSlateBlue;
+            button1.Font = new Font("Montserrat Medium", 19.7999973F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button1.ForeColor = SystemColors.ButtonHighlight;
+            button1.Location = new Point(1834, 532);
+            button1.Name = "button1";
+            button1.Size = new Size(44, 45);
+            button1.TabIndex = 0;
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // Juri
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1902, 1033);
+            Controls.Add(button1);
             Name = "Juri";
             Text = "Juri";
             ResumeLayout(false);
@@ -56,5 +58,6 @@
         #endregion
 
         private ImageList imageList1;
+        private Button button1;
     }
 }

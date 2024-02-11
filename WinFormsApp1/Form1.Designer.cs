@@ -69,11 +69,12 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Montserrat ExtraBold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.GhostWhite;
-            label2.Location = new Point(28, 134);
+            label2.Location = new Point(71, 137);
             label2.Name = "label2";
-            label2.Size = new Size(174, 24);
+            label2.Size = new Size(69, 24);
             label2.TabIndex = 4;
-            label2.Text = "Это мероприятие";
+            label2.Text = "Жюри";
+            label2.Click += label2_Click;
             // 
             // label3
             // 

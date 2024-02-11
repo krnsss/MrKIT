@@ -16,5 +16,12 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Juri2 j = new Juri2();
+            this.Close();
+            j.Show();
+        }
     }
 }
