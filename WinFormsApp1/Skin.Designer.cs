@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1
 {
-    partial class Hello
+    partial class Skin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Hello));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Skin));
             SuspendLayout();
             // 
-            // Hello
+            // Skin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1902, 1033);
-            Name = "Hello";
+            Name = "Skin";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Hello";
+            Text = "Skin";
             WindowState = FormWindowState.Maximized;
-            Load += Hello_Load;
             ResumeLayout(false);
         }
 

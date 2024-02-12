@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1
 {
-    partial class Hello
+    partial class Inter
     {
         /// <summary>
         /// Required designer variable.
@@ -28,24 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Hello));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inter));
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // Hello
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, -2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(942, 452);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
+            // Inter
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1902, 1033);
-            Name = "Hello";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Hello";
-            WindowState = FormWindowState.Maximized;
-            Load += Hello_Load;
+            ClientSize = new Size(940, 450);
+            Controls.Add(pictureBox1);
+            Name = "Inter";
+            Text = "Inter";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
+
+        private PictureBox pictureBox1;
     }
 }

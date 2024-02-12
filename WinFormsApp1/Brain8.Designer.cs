@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1
 {
-    partial class Hello
+    partial class Brain8
     {
         /// <summary>
         /// Required designer variable.
@@ -28,24 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Hello));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Brain8));
+            button1 = new Button();
             SuspendLayout();
             // 
-            // Hello
+            // button1
+            // 
+            button1.BackColor = Color.MediumSlateBlue;
+            button1.Font = new Font("Montserrat Medium", 19.7999973F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            button1.ForeColor = SystemColors.ButtonHighlight;
+            button1.Location = new Point(1832, 523);
+            button1.Name = "button1";
+            button1.Size = new Size(44, 45);
+            button1.TabIndex = 2;
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // Brain8
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1902, 1033);
-            Name = "Hello";
+            Controls.Add(button1);
+            Name = "Brain8";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Hello";
+            Text = "Brain8";
             WindowState = FormWindowState.Maximized;
-            Load += Hello_Load;
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button button1;
     }
 }

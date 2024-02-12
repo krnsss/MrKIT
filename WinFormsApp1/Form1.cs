@@ -34,5 +34,35 @@ namespace WinFormsApp1
             Juri j = new Juri();
             j.Show();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Mister1 m1 = new Mister1();
+            m1.Show();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Like l = new Like();
+            l.Show();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Brain1 b = new Brain1();
+            b.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Skin s = new Skin();
+            s.Show();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Inter i = new Inter();
+            i.Show();
+        }
     }
 }

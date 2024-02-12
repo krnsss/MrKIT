@@ -43,12 +43,15 @@
             pictureBox1 = new PictureBox();
             label7 = new Label();
             label8 = new Label();
+            label9 = new Label();
+            pictureBox7 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
             // pictureBox2
@@ -82,11 +85,11 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Montserrat ExtraBold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.GhostWhite;
-            label3.Location = new Point(70, 306);
+            label3.Location = new Point(49, 306);
             label3.Name = "label3";
-            label3.Size = new Size(66, 24);
+            label3.Size = new Size(109, 24);
             label3.TabIndex = 6;
-            label3.Text = "Стиль";
+            label3.Text = "Участники";
             // 
             // pictureBox3
             // 
@@ -98,6 +101,7 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 5;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // label4
             // 
@@ -121,6 +125,7 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 7;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // label5
             // 
@@ -144,6 +149,7 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 9;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
             // 
             // label6
             // 
@@ -167,6 +173,7 @@
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 11;
             pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
             // 
             // label1
             // 
@@ -215,6 +222,30 @@
             label8.TabIndex = 18;
             label8.Text = "необходимы громкие апплодисменты";
             // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = Color.Transparent;
+            label9.Font = new Font("Montserrat ExtraBold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.GhostWhite;
+            label9.Location = new Point(54, 976);
+            label9.Name = "label9";
+            label9.Size = new Size(102, 24);
+            label9.TabIndex = 20;
+            label9.Text = "Симпатия";
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BackColor = Color.Transparent;
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(39, 865);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(131, 108);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 19;
+            pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox7_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -222,6 +253,8 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1902, 1033);
+            Controls.Add(label9);
+            Controls.Add(pictureBox7);
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(pictureBox1);
@@ -247,6 +280,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -266,5 +300,7 @@
         private PictureBox pictureBox1;
         private Label label7;
         private Label label8;
+        private Label label9;
+        private PictureBox pictureBox7;
     }
 }
